@@ -17,7 +17,7 @@ let searchResult;
 
 async function makeAPIRequest(city){
     try{
-        const response = await fetch(`https:\\api.openweathermap.org/data/2.5/weather?q=${city}&appid=${API_KEY}&units=metric`);
+        const response = await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${API_KEY}&units=metric`);
         if(!response.ok) throw new Error('Network Problem');
         return await response.json(); 
     }catch(e){
