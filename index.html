@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Weather App</title>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="card">
+            <h1>Current Weather</h1>
+            <input type="text" name="city" id="city" placeholder="enter city">
+            <div class="result hidden">
+                <div class="address"></div>
+                <div class="data">
+                    <div class="left">
+                        <div class="temperature">
+                            <span class="value">
+                            </span>
+                            <span class="temperature-unit">
+                                <sup>o</sup>
+                                C
+                            </span>
+                        </div>
+                        <div class="weather-description"></div>
+                    </div>
+                    <div class="divider"></div>
+                    <div class="right">
+                        <div class="feels-like">
+                            <span class="text">FEELS LIKE: </span>
+                            <span class="value"></span>
+                            <span class="temperature-unit">
+                                <sup>o</sup>
+                                C
+                            </span>
+                        </div>
+                        <div class="wind">
+                            <span class="text">WIND: </span>
+                            <span class="value"></span>
+                        </div>
+                        <div class="humidity">
+                            <span class="text">HUMIDITY: </span>
+                            <span class="value"></span>
+                        </div>
+                    </div>
+                </div>
+                <label class="switch">
+                    <input type="checkbox">
+                    <span class="slider round">
+                        <span>C</span>
+                        <span>F</span>
+                    </span>
+                  </label>
+            </div>
+        </div>
+    </div>
+    <script src="./index.js"></script>
+</body>
+</html>
